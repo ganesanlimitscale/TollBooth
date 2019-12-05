@@ -16,8 +16,8 @@ namespace TollBooth
     internal class FileMethods
     {
         private readonly CloudBlobClient _blobClient;
-        private readonly string _containerName = Environment.GetEnvironmentVariable("exportCsvContainerName");
-        private readonly string _blobStorageConnection = Environment.GetEnvironmentVariable("blobStorageConnection");
+        private readonly string _containerName = "export";
+        private readonly string _blobStorageConnection = "DefaultEndpointsProtocol=https;AccountName=tollboothstoragegs;AccountKey=JOvq7oPiQ6SumJQ2+cYvUExThja+yrIe1M1IISmZfLDPoj7/dhinqIzbfGVX8lg6Wwq1EFfMB3AVgIrUHxos3A==;EndpointSuffix=core.windows.net";
         private readonly ILogger _log;
 
         public FileMethods(ILogger log)
